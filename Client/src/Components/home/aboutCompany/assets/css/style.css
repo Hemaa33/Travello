@@ -1,0 +1,137 @@
+
+@import url('https://fonts.cdnfonts.com/css/gloss-and-bloom');
+
+@media (min-width: 768px) {
+    .aboutCompany {
+        padding: 50px 100px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .aboutCompany {
+        padding-right: 200px;
+        padding-left: 200px;
+        padding-bottom: 30px;
+        padding-top: 60px;
+        /* background-position-y: 100% ; */
+    }
+  }
+.aboutCompany{
+    background-image: url(../images/about-bg.png);
+    background-color: #F3F8F6;
+    background-attachment:scroll;
+    /* background-size: contain; */
+    background-repeat:no-repeat;
+    background-position:bottom;
+    /* background-position-y: 70%; */
+    font-weight: 500;
+}
+.aboutCompanySectionBegin{
+    font-family: gloss and bloom;
+    color: #FF6525;
+}
+.aboutCompanySectionTitle{
+    font-size: 37px;
+    font-weight: 700;
+}
+.aboutCompanyFeaturesIcon{
+    align-self: center;
+    color: #FF6525
+}
+.aboutCompanyFeaturesParagraph{
+    color: rgb(88, 88, 88);
+}
+.aboutCompanyIcons{
+    display: flex;
+    justify-content: center;
+    align-self: end;
+    background-color: #F7CBB7;
+    border-radius: 100px;
+    width: 80px;
+    height: 80px;
+}
+
+.aboutCompanyFeaturesTitle{
+    font-size: 17px;
+    font-weight: 700;
+}
+.aboutCompanyDiscover{
+    background-color: #11BB67 !important;
+    border: none;
+    border-radius: 4px;
+    height: 60px;
+    width: 160px;
+}
+.aboutCompanyImg{
+    width: 40%;
+    border-radius: 10px;
+    position: relative;
+}
+.aboutCompanyImgOne{
+    width: 65%;
+    right: -6%;
+}
+.aboutCompanyImgTwo{
+    top: -10%;
+    border: white solid 5px;
+}
+@media(min-width: 1416px) {
+    .aboutCompanyImg{
+        position: relative;
+        border-radius: 10px;
+    }
+    .aboutCompanyImgTwo{
+        top: -80px;
+        border: white solid 5px;
+    }
+    .aboutCompanyImgOne{
+        right: -30px;
+    }
+    .aboutCompanyImgThree{
+        top: -2% !important;
+    }   
+}
+@media(min-width: 1200px) {
+    .aboutCompanyImg{
+        position: relative;
+        border-radius: 10px;
+    }
+    .aboutCompanyImgOne{
+        width: 70%;        
+    }
+    .aboutCompanyImgTwo{
+        width:45% ;
+        top: -10%;
+        left: -5%;
+        border: white    solid 5px;
+    }
+    .aboutCompanyImgThree{
+        left: -4%;
+        top: -1%;
+    }
+}
+@media(min-width: 200px) {
+    .aboutCompanySectionTitle{
+        font-size: 25px !important;
+    }
+    
+}
+@media(min-width: 400px) {
+    .aboutCompanySectionTitle{
+        font-size: 35px !important;
+    }
+    .aboutCompanyFeaturesTitle{
+        
+        font-size: 20px;
+    }
+}
+@media(min-width: 1200px) {
+    .aboutCompanySectionTitle{
+        font-size: 30px !important;
+    }
+}
+@media(min-width: 1400px) {
+    .aboutCompanySectionTitle{
+        font-size: 37px !important;
+    }
+}

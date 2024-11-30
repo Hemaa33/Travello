@@ -1,0 +1,197 @@
+/* Small */
+@media (min-width: 0px) {
+    .TourDetailsMain{
+        padding-left:  8%;
+        padding-right: 8%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+    }
+  }
+/* Medium */
+@media (min-width: 768px) {
+    .TourDetailsMain{
+        padding: 50px 100px;
+    }
+  }
+
+  /* Large */
+  @media (min-width: 1200px) {
+    .TourDetailsMain{
+        padding: 50px 200px;
+    }
+  }
+  
+.TourDetailsLanding{
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(../assets/img/slider-1-2.jpg);
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    height: 55vh;
+    color: white;
+}
+.TourDetailsLandingTitle{
+    font-weight: 700;
+}
+.TourDetailsLandingBtn{
+    position: relative;
+    top: -60%;
+    height: 60px;
+    width: 350px !important;
+    border: none;
+    font-weight: 600;    
+    border-radius: 5px;
+}
+/* for medium and large screen */
+@media (min-width: 382px) {
+    .TourDetailsBtnTxt{
+        font-size: large !important;
+    }
+}
+.btn-success{
+    background-color: #11BB67;
+}
+.TourDetailsMainBlog{
+    font-weight: 500;
+}
+.TourDetailsIconGrn{
+    color: #11BB67;
+}
+.TourDetailsAddress{
+    font-size: larger;
+}
+
+@media (min-width: 0px) {
+  .TourDetailsSecTitle{
+      font-size: 200%;
+      color: black;
+    }
+}
+@media (min-width: 768px) {
+    .TourDetailsSecTitle{
+        font-size: 270%;
+        color: black;
+    }
+  }
+  .TourDetailsSecTitle{
+    color: black !important;
+}
+.TourDetailsInfo{
+    font-size:large;
+}
+.TourDetailsFrom{
+    color: rgb(119, 119, 119);
+}
+.TourDetailsMainImg{
+    border-radius: 20px;
+}
+.TourDetailsAmenties{
+    border: #11BB67 dotted 2px;
+    border-radius: 10px;
+}
+.TourDetailsAmentiesIcons{
+    color: #FF6525;
+}
+.contactUsMap{
+    height: 90vh;
+}
+.contactUsIframneGmap{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.TourDetailsPageNumbers{
+    background-color: #F3F8F6;
+    padding: 15px 23px;
+    font-weight: 500;
+    border: none;
+    border-radius:3px;
+}
+.TourDetailsPageNumbersNext{
+    padding: 15px 23px;
+    border: none;
+    border-radius:3px;
+}
+
+.packagecontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.package-details,
+.tour-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.package-details h2,
+.tour-info h2 {
+    color: #4caf50;
+    margin-bottom: 20px;
+}
+
+.package-details label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.package-details input[type="date"],
+.package-details select,
+.package-details input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.tickets {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.tickets div {
+    flex: 1;
+}
+
+.additional-services div {
+    margin-bottom: 10px;
+}
+
+.package-details button {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.package-details button:hover {
+    background-color: #45a049;
+}
+
+.tour-info ul {
+    list-style-type: none;
+}
+
+.tour-info li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tickets {
+        flex-direction: column;
+    }
+}

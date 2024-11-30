@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin tours</title>
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/adminlte/dist/css/adminlte.min.css">
+</head>
+
+<body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
+    <!--begin::App Wrapper-->
+    <div class="app-wrapper">
+        <!--begin::Header-->
+        <nav class="app-header navbar navbar-expand bg-body" style="min-height: 50px;">
+            <!--begin::Container-->
+            <div class="container-fluid">
+            </div>
+            <!--end::Container-->
+        </nav>
+
+
+        <!--end::Header--> <!--begin::Sidebar-->
+        <aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark">
+            <!--begin::Sidebar Brand-->
+            <div class="sidebar-brand">
+               <!--begin::Brand Link--> 
+               <a href="/blogs" class="brand-link">
+                    <span class="brand-text fw-light">AdminLTE 4</span> <!--end::Brand Text--> 
+               </a>
+               <!--end::Brand Link--> 
+            </div>
+            <!--end::Sidebar Brand--> <!--begin::Sidebar Wrapper-->
+            <div class="sidebar-wrapper">
+               <nav class="mt-2">
+                  <!--begin::Sidebar Menu-->
+                  <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
+                     <li class="nav-item">
+                        <a href="/blogs" class="nav-link">
+                           <i class="nav-icon bi bi-speedometer"></i>
+                           <p>
+                              blogs
+                              <i class="nav-arrow bi bi-chevron-right"></i>
+                           </p>
+                        </a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="/blogs/new" class="nav-link">
+                           <i
+                              class="nav-icon bi bi-palette"></i>
+                           <p>add blog</p>
+                        </a>
+                     </li>
+                  </ul>
+
+
+                  <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
+                     <li class="nav-item">
+                        <a href="/tours" class="nav-link">
+                           <i class="nav-icon bi bi-speedometer"></i>
+                           <p>
+                              tours
+                              <i class="nav-arrow bi bi-chevron-right"></i>
+                           </p>
+                        </a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="/tours/new" class="nav-link">
+                           <i
+                              class="nav-icon bi bi-palette"></i>
+                           <p>add tour</p>
+                        </a>
+                     </li>
+                  </ul>
+                  <!--end::Sidebar Menu-->
+               </nav>
+            </div>
+            <!--end::Sidebar Wrapper-->
+         </aside>
+
+
+        <!--end::Sidebar--> <!--begin::App Main-->
+        <main class="app-main">
+            <!--begin::App Content Header-->
+            <div class="app-content-header">
+                <!--begin::Container-->
+                <div class="container-fluid">
+                    <!--begin::Row-->
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h3 class="mb-0">Adding tour</h3>
+                        </div>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-end">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">
+                                    Adding tour
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="app-content">
+                <!--begin::Container-->
+                <div class="container-fluid">
+                    <!--begin::Row-->
+                    <div class="row g-4">
+                        <!--begin::Col-->
+                        <div class="col-md-6">
+                            <!--begin::Quick Example-->
+                            <div class="card card-primary card-outline mb-4">
+                                <div class="card-header">
+                                    <div class="card-title">Adding tour</div>
+                                </div>
+                                <!--end::Header--> <!--begin::Form-->
+                                <form action="/tours" method="POST" enctype="multipart/form-data">
+                                    <div class="card-body">
+                                        <!-- Display Error Messages -->
+                                        <% if (errors.length> 0) { %>
+                                            <div class="alert alert-danger">
+                                                <ul>
+                                                    <% errors.forEach(function(error) { %>
+                                                        <li>
+                                                            <%= error %>
+                                                        </li>
+                                                        <% }) %>
+                                                </ul>
+                                            </div>
+                                            <% } %>
+                                                <div class="mb-3">
+                                                    <div class="form-group">
+                                                        <label for="name">tour Name</label>
+                                                        <input type="text" class="form-control" id="name" name="name"
+                                                            required minlength="5" value="<%= tour.name || '' %>">
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <div class="form-group">
+                                                        <label for="desc">Description</label>
+                                                        <textarea class="form-control" id="desc" name="desc" cols="4"
+                                                            rows="6" required
+                                                            minlength="15"><%= tour.desc || '' %></textarea>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="mb-3">
+                                                    <div class="form-group">
+                                                        <label for="location">tour Location</label>
+                                                        <input type="text" class="form-control" id="location" name="location"
+                                                             minlength="5" value="<%= tour.location || '' %>">
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <div class="form-group">
+                                                        <label for="duration">tour duration</label>
+                                                        <input type="text" class="form-control" id="duration" name="duration"
+                                                             minlength="5" value="<%= tour.duration || '' %>">
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="mb-3">
+                                                    <div class="form-group">
+                                                        <label for="cover">tour Cover</label>
+                                                        <input type="file" class="form-control-file" id="cover"
+                                                            name="cover">
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <button type="submit" class="btn btn-primary">Add tour</button>
+                                                </div>
+                                    </div>
+                                </form>
+                                <!--end::Form-->
+                            </div>
+                        </div>
+                        <!--end::Col--> <!--begin::Col-->
+                    </div>
+                    <!--end::Row-->
+                </div>
+                <!--end::Container-->
+            </div>
+            <!--end::App Content-->
+        </main>
+
+
+        <!--end::App Main--> <!--begin::Footer-->
+        <footer class="app-footer">
+            <div class="float-end d-none d-sm-inline">Anything you want</div>
+            <strong>
+                Copyright &copy; 2014-2024&nbsp;
+                <a href="https://adminlte.io" class="text-decoration-none">AdminLTE.io</a>.
+            </strong>
+            All rights reserved.
+        </footer>
+    </div>
+    <script src="/adminlte/dist/js/adminlte.min.js"></script>
+</body>
+
+</html>

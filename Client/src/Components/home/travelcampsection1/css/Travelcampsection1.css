@@ -1,0 +1,114 @@
+:local {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.mainSection {
+  background: url('../../../assets/img/slider-1-1.jpg') center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10%;
+  position: relative;
+}
+
+.mainContent h1 {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: bold;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.btnStart {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #FF7F50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.playButton {
+  position: absolute;
+  right: 10%;
+  bottom: 20%;
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 20px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  margin-left: 5px;
+}
+
+.statsSection {
+  background-color: #FF7F50;
+  padding: 20px 0;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.statItem {
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.statItem h3 {
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+.statItem p {
+  font-size: 1rem;
+}
+
+.starIcon {
+  width: 30px;
+  height: 30px;
+  background: white;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .mainContent h1 {
+    font-size: 2.5rem;
+  }
+  .stats {
+    flex-wrap: wrap;
+  }
+  .statItem {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+  }
+}

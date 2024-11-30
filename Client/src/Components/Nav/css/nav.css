@@ -1,0 +1,38 @@
+/*start sub navbar */
+.SocialMediaNav {
+  gap: 20px;
+  border-left: 1px solid;
+  border-color: white;
+  margin-left: 80px;
+}
+
+/*end sub navbar */
+@media (max-width: 992px) {
+  .mainSubNav {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .subNav-item {
+    display: none;
+  }
+
+}
+
+/*start main navbar */
+.contactUsfrm {
+  margin-left: 150px;
+}
+
+.contactUsfrm>button {
+  height: 60px;
+  background-color: #11bb67;
+}
+.contactUsfrm>button:hover {
+
+  background-color: #11bb67;
+}
+
+
+/*end main navbar */

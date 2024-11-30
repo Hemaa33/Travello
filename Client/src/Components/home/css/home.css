@@ -1,0 +1,22 @@
+
+    .hero-section {
+      background-image: url(../../assets/img/slider-1-1.jpg); /* Use the path to the image */
+      background-size: cover; /* Ensure the image covers the entire div */
+      background-position: center;
+      height: 100vh; /* Full viewport height */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    
+    .content {
+      color: white; /* Text color for better visibility */
+    }
+    
+    h1, p {
+      margin: 0;
+    }
+    .homeLander{
+      font-family: "Gloss And Bloom";
+    }

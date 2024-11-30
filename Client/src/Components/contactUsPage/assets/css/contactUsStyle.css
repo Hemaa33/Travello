@@ -1,0 +1,111 @@
+/* Small */
+@media (min-width: 0px) {
+    .contactUs2ndSection, .contactUsMap{
+        padding-left:  8%;
+        padding-right: 8%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+    }
+  }
+/* Medium */
+@media (min-width: 768px) {
+    .contactUs2ndSection, .contactUsMap{
+        padding: 50px 100px;
+    }
+  }
+
+  /* Large */
+  @media (min-width: 1200px) {
+    .contactUs2ndSection, .contactUsMap{
+        padding: 50px 200px;
+    }
+  }
+
+
+.contactUsLanding{
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(../images/slider-1-1.jpg);
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    height: 55vh;
+    color: white;
+}
+.contactUsLandingTitle{
+    font-weight: 700;
+}
+.contactUsLandingBtn{
+    position: relative;
+    top: -60%;
+    height: 60px;
+    width: 200px !important;
+    border: none;
+    font-weight: 600;    
+    border-radius: 5px;
+}
+/* for medium and large screen */
+@media (min-width: 382px) {
+    .homeContactBtnTxt{
+        font-size: large !important;
+    }
+}
+/* for small screen */
+.homeContactBtnTxt{
+    font-size: small;
+}
+
+.btn-success{
+    background-color: #11BB67;
+}
+.contactUsInputSendMsg{
+    border: none;
+    height: 60px;
+    width: 150px;
+    border-radius: 5px;
+}
+.bg-success{
+    background-color: #11BB67  !important;   
+}
+.contactUsInputHalf{
+    border-radius: 5px;
+    height: 55px;
+}
+.contactUsInputFull{
+    border-radius: 5px;
+    height: 55px;
+}
+.contactUsTxtArea{
+    padding-bottom: 65px;
+    border-radius: 5px;
+    height: 130px;
+}
+.contactUsInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top:    45px;
+    padding-bottom: 45px;
+    border-radius: 9px;
+    height: 90% ;
+}
+.contactUsIcon{
+    border-radius: 100px;
+    padding: 30px;
+    color: #11BB67;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+}
+
+.contactUsInfoTitle{
+    text-decoration: underline;
+    font-size: 110%
+}
+.contactUsMap{
+    height: 90vh;
+}
+.contactUsIframneGmap{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
